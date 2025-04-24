@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demande de suppression de compte</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      p {
+        color: #555;
+        font-size: 15px;
+      }
+
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 100%;
+        background-color: #e74c3c;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #c0392b;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #aaa;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Demande de suppression de compte</h2>
+      <p>
+        Vous souhaitez supprimer votre compte Easy Saves ? Remplissez ce
+        formulaire et notre équipe traitera votre demande dans les plus brefs
+        délais.
+      </p>
+      <form
+        method="POST"
+        action="mailto:support@easy-saves.app?subject=Suppression de mon compte"
+        enctype="text/plain"
+      >
+        <label for="email">Adresse e-mail associée au compte :</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="details">Commentaires ou précisions (facultatif) :</label>
+        <textarea
+          id="details"
+          name="message"
+          rows="4"
+          placeholder="Écrivez ici..."
+        ></textarea>
+
+        <button type="submit">Envoyer la demande</button>
+      </form>
+
+      <div class="footer">© Easy Saves 2025 – Tous droits réservés</div>
+    </div>
+  </body>
+</html>
